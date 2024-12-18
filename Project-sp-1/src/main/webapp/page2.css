@@ -1,0 +1,147 @@
+@charset "UTF-8";
+body{	
+	margin: 0px;
+	padding: 0px;
+	line-height: 1.5em;
+	box-sizing: border-box;
+}
+
+#head2{
+	background-color:black;
+	height: 60px;
+	position: fixed;
+	width: 100%;
+	margin-top:-300px;	
+}
+
+ul{
+	list-style-type:None;
+}
+
+#name2{
+	float:left;
+	margin:20px;
+	font-size:40px;
+	padding-right:1000px;
+	color:gold;
+	margin-top:0px;
+	font-family: Brush Script MT;
+}
+
+li{
+	float:left;
+	border-right: 2px solid white;
+	margin-top:-13px;
+}
+li:last-child{
+	border-right:None;
+}
+
+li:first-child{
+	border-right:None;
+}
+
+li a{
+	display:block;
+	float:left;
+	font-size:20px;
+	padding-right:10px;
+	padding-left:10px;
+	text-align:center;
+	text-decoration:None;
+	margin:30px;
+	margin-top:13px;
+	color:white;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;	
+}
+
+li a:hover{
+	background-color:dodgerblue;
+	color:black;
+	border-radius: 10px;
+}
+
+.txt{
+	position: absolute;
+	top:240px;
+	left:720px;
+	font-size:35px;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	min-height:100hv;
+	flex-direction: column;
+	gap:30px;
+	margin-top:300px;
+		
+}
+
+.inputbox{
+	position:relative;
+	width:250px;
+}
+
+.inputbox input{
+	width: 100%;
+	padding:15px;
+	border:1px solid black;
+	border-radius: 5px;
+	outline:none;
+	font-size:1em;
+	transition: 0.5s;
+}
+
+.inputbox span{
+	position:absolute;
+	left:0;
+	margin-top:-47px;
+	padding:10px;
+	pointer-events:none;
+	font-size:1em;
+	text-transform:uppercase;
+	transition:0.5s;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span
+{
+	transform:translateX(10px)translateY(-16px);
+	font-size:0.65em;
+	padding: 0 10px;
+	background:black;
+	color:white;
+	border-radius:2px;
+	letter-spacing:0.2em;
+}
+
+.inputbox input:valid ,
+.inputbox input:focus
+{
+	border:2px solid black;
+}
+
+.inputbox:nth-child(3) input{
+	background: black;
+	color:white;
+	width:280px;
+}
+.inputbox:nth-child(3) input:hover{
+	background:#37373b;
+	color:white;
+	width:280px;
+}
+
+
+/*.inputbox:nth-child(2) input:valid ~ span,
+.inputbox:nth-child(2) input:focus ~ span{
+	background:black;
+	color:white;
+	border-radius:2px;
+	
+}*/
+

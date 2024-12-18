@@ -1,0 +1,174 @@
+@charset "UTF-8";
+body{
+	margin:0;
+	padding:0;
+	line-height:1.5em;
+}
+
+#head5{
+	position:Fixed;
+	background: black;
+	width:100%;
+	height:60px;
+	margin-top:-200px;
+	
+}
+
+ul{
+	list-style-type: none;
+}
+.li11{
+	float:left;
+	border-right: 2px solid white;
+	margin-top:-13px;
+}
+.li11:last-child{
+	border-right:None;
+}
+
+.li11:first-child{
+	border-right:None;
+}
+
+#name5{
+	float:left;
+	margin:20px;
+	font-size:40px;
+	padding-right:1000px;
+	color:gold;
+	margin-top:0px;
+	font-family: Brush Script MT;
+	}
+	
+.li11 a{
+	display:block;
+	float:left;
+	font-size:20px;
+	padding-right:10px;
+	padding-left:10px;
+	text-align:center;
+	text-decoration:None;
+	margin:30px;
+	margin-top:13px;
+	color:white;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.li11 a:hover{
+	background-color:dodgerblue;
+	color:black;
+	border-radius: 10px;
+}
+
+.head6{
+	clear:both;
+	position: fixed;
+	border-bottom:3px solid black;
+	width:100%;
+	height:60px;
+	margin-top:-140px;
+}
+
+.li1 a{
+
+	display:block;
+	float:left;
+	font-size:20px;
+	text-align:center;
+	text-decoration: none;
+	margin:5px;
+	margin-right: 70px;
+	font-family:monospace;
+	color:black;	
+}
+
+.li1 a:hover{
+	border-bottom: 2px solid black;
+
+}
+
+iframe{
+	clear:both;
+	max-height:100%;
+	max-width:100%;
+	width:800px;
+	height:500px;
+	float:right;
+	margin-right:100px;
+	margin-top:-50px;
+}
+
+.head7{
+	
+	margin-top:200px;
+}
+.sub{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	align-content:center;
+	flex-direction: column;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin-left:-100px;
+	
+}
+.sub label{
+	font-size: 40px;
+	font-weight:bold;
+}
+.sub p{
+	font-size:15px;
+	color:cadetblue;
+}
+.int{
+	width:350px;
+	position: relative;
+	padding-bottom:30px;
+}
+.int input{
+	width:100%;
+	padding:15px;
+	border:1px solid black;
+	outline:none;
+	font-size:1em;
+	transition:0.5s;
+	border-radius:5px;
+}
+
+.int span{
+	position: absolute;
+	left:0;
+	padding:10px;
+	pointer-events:none;
+	font-size:1em;
+	transition:0.5s;
+	margin-top:-47px;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;	
+}
+
+.int input:valid ~ span,
+.int input:focus ~ span{
+	background: black;
+	color:white;
+	transform: translateX(10px) translateY(-15px);
+	padding: 0px 10px;
+	border-radius:5px;
+	letter-spacing:0.2em;
+	font-size:0.65em;	
+}
+
+.int input:valid,
+.int input:focus{
+	border: 2px solid black;
+}
+
+.int:nth-child(7) input{
+	background: black;
+	color:white;
+	width:380px;
+}
+.int:nth-child(7) input:hover{
+	background:#37373b;
+	color:white;
+	width:280px;
+	}
